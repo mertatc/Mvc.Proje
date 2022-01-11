@@ -32,5 +32,6 @@ namespace Proje.Entity
 
             base.Seed(context);
         }
+
     }
 }
