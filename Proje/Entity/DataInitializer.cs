@@ -27,7 +27,14 @@ namespace Proje.Entity
 
             var urunler = new List<Product>()
             {
+                new Product(){Name = "1050TI bilgisayar çok kullanışlı 8 gb ram", Description="csgo açarsın",Price=5600, Stock=1200,İsApproved=true,CategoryId=1},
+                new Product(){Name = "2050TI bilgisayar çok kullanışlı 8 gb ram i5 işlemci", Description="csgo açarsın",Price=5600, Stock=1200,İsApproved=true,CategoryId=1},
 
+                new Product(){Name = "oppo", Description="csgo açamazsın",Price=5600, Stock=1200,İsApproved=true,CategoryId=3},
+                new Product(){Name = "vestel", Description="csgo açaman",Price=5600, Stock=1200,İsApproved=true,CategoryId=3},
+
+                new Product(){Name = "dolap", Description="herkesin var",Price=5600, Stock=1200,İsApproved=true,CategoryId=4},
+                new Product(){Name = "fırın", Description="yeemk pişir",Price=5600, Stock=1200,İsApproved=true,CategoryId=4},
             };
 
             base.Seed(context);

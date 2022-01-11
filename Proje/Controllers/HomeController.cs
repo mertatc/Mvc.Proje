@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proje.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,11 @@ namespace Proje.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Hoe
+        DataContext _context = new DataContext();
         public ActionResult Index()
         {
-            return View();
+            //veri tabanı sorguluyoruz
+            return View(_context.Products.ToList());
         }
         public ActionResult Details()
         {
